@@ -1,0 +1,32 @@
+ion-card-content{
+    color:rgb(243, 242, 242);
+}
+ion-menu-button{
+    color: black;
+}
+ion-content{
+
+    --background: linear-gradient(0deg, rgba(8, 8, 8, 0.7), rgba(90, 74, 74, 0.1)),
+    url("https://i.pinimg.com/originals/81/99/c4/8199c41f6642e5f9358085b9244b7965.jpg") no-repeat center center / cover;
+    }
+    
+    ion-menu{
+        text-align: left;
+    
+}
+ion-card{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin: 0 !important;
+    height: 23vh;
+    
+}
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  img{
+    height: 7 rem;
+    width: 7.2 rem;
+  }

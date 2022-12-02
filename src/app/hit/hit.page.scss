@@ -1,0 +1,38 @@
+ion-title{
+    text-align-last: left;
+}
+ion-content{
+    --background: linear-gradient(0deg, rgba(8, 8, 8, 0.7), rgba(12, 12, 12, 0.1)),
+    url("https://i.pinimg.com/originals/81/99/c4/8199c41f6642e5f9358085b9244b7965.jpg") no-repeat center center / cover;
+}
+ion-card-content{
+    color: rgb(0, 255, 0);
+}
+ion-item{
+    ion-thumbnail{
+        height: 100%;
+        margin-inline-end: 10px;
+    
+    }
+    h1{
+        font-weight: bold;
+        font-size: 0.9rem;
+    
+    }
+    p{
+        font-size: 0.6rm;
+        height: 70%;
+    }
+       
+    p+p{
+        color: #8a8a8a
+    }
+    
+    ion-chip{
+        padding-inline: 3px;
+    }
+     --background: rgb(8, 8, 8);
+      color:rgb(253, 16, 16)
+    }
+     
+    

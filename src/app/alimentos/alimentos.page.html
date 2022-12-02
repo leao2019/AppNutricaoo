@@ -1,0 +1,145 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Alimentos</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/receitas']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Buscar"></ion-searchbar>
+
+  <!-- List of Text Items -->
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="full">
+    <ion-thumbnail slot="start">
+      <img src="https://img.itdg.com.br/tdg/images/recipes/000/007/902/230733/230733_original.jpg?mode=crop&width=710&height=400">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Peito de peru</h1>
+       <p>27/08/2022</p>
+       <p>1 peito de peru,
+        1 copo de vinho branco,
+        Suco de 1 limão,
+        1 cebola grande e
+        Sal</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item lines="full">
+    <ion-thumbnail slot="start">
+      <img src="https://www.curraldeminas.com.br/wp-content/uploads/2016/02/assinha-de-frango-com-parmesao-curral-de-minas.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Asinha de frango com parmesao</h1>
+       <p>06/09/2022</p>
+       <p>2 xícaras (chá) de farinha de rosca,1 xícara (chá) de queijo parmesão ralado na hora,
+        Suco de 1 limão,
+        1 cebola grande e
+        Sal</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+ 
+
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item lines="full">
+    <ion-thumbnail slot="start">
+      <img src="https://s.cornershopapp.com/product-images/4082301.jpg?versionId=1oywDqddDtTNffRXkiT7ETt_y1IFhWqg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Pao Frances</h1>
+       <p>06/09/2022</p>
+       <p> Peito de peru cheftime 120 g
+        Presunto e salada
+      </p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+ 
+
+  </ion-item>
+</ion-list>
+
+
+<ion-list>
+  <ion-item lines="full">
+    <ion-thumbnail slot="start">
+      <img src="https://www.minervafoods.com/wp-content/uploads/2018/02/frango_grelhado_-_blog.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Filé de peito de frango</h1>
+       <p>06/09/2022</p>
+       <p>½ colher (sopa) de páprica picante,
+        ½ colher (sopa) de coentro em pó,
+        Pimenta-do-reino a gosto,
+        1 colher de chá de açúcar, 2 filés de peito de frango,
+        1 colher (sopa) de sal,1 colher (sopa) de azeite de oliva,1 dente de alho</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+ 
+
+  </ion-item>
+</ion-list>
+
+
+<ion-list>
+  <ion-item lines="full">
+    <ion-thumbnail slot="start">
+      <img src="https://i.pinimg.com/736x/ae/25/6e/ae256ea9470c43f89c6519999b3dc8ce.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Frango Marsala</h1>
+       <p>06/09/2022</p>
+       <p>1 kg de filé de frango,
+        4 colheres de semente de coentro e
+        2 colheres semente de cumin</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+ 
+
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+  </ion-item-options>
+
+</ion-list>
+
+
+</ion-header>
+
+<ion-content>
+
+</ion-content>

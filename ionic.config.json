@@ -1,0 +1,7 @@
+{
+  "name": "NutricaoApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

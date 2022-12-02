@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title></ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/nutricionista']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-view title="Cálculo de IMC" class="bar-positive">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+      <!--<p>Preencha os campos abaixo para calcular seu IMC:</p>-->
+      <ion-card color="primary">
+        <ion-card-header>
+          <img src="https://img.freepik.com/vector-premium/control-indice-masa-corporal-bastante-joven-dieta-tratando-controlar-peso-corporal-imc-chica-escala-metodo-medicion-grasas-saludables-escalas-graficas-obesidad-peso-obesidad-extrema_458444-1022.jpg?w=2000" alt="100">
+          <ion-card-title>Calcule seu IMC</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Preencha as seguintes informações abaixo:
+        </ion-card-content>
+      </ion-card>
+      <ion-list>
+        <ion-item>
+          <ion-label color="dark">Digite seu peso:</ion-label>
+          <ion-input [(ngModel)]="peso"> </ion-input>
+        </ion-item>
+   
+        <ion-item>
+          <ion-label color="dark">Digite sua altura:</ion-label>
+          <ion-input [(ngModel)]="altura"> </ion-input>
+        </ion-item>
+<br>
+        <ion-button expand="full"(click)="Calcular()">Calcular</ion-button>
+        <h1>{{resultado}}</h1>
+                         
+      </ion-list>
+    </ion-content>
+  </ion-view>
+</ion-content>

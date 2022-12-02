@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>Esqueceu sua senha:</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/login']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="success" expand="block">Enviar</ion-button>
+      </ion-col>
+    </ion-row>
+    <small>
+     Forneça o e-mail do usuário para enviarmos uma nova senha
+  </form>
+</ion-content>

@@ -1,0 +1,14 @@
+ion-card-content{
+    background-color: rgb(16, 17, 16);
+    color: darkorange;
+    font-size: medium;
+}
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  ion-content{
+
+    --background: linear-gradient(0deg, rgba(8, 8, 8, 0.7), rgba(90, 74, 74, 0.1)),
+    url("https://i.pinimg.com/originals/81/99/c4/8199c41f6642e5f9358085b9244b7965.jpg") no-repeat center center / cover;
+    }

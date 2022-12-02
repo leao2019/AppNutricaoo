@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+  <h1>Seja Bem-vindo(a) ao</h1>
+  <h2>NUTRITIONGYM<ion-icon name="logo-apple"></ion-icon></h2> 
+</ion-header>
+<ion-content color="">
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="person"></ion-icon>Usuario</ion-label>
+
+      <ion-input [(ngModel)]="userLogin.email" name="first"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="key"></ion-icon>Senha</ion-label>
+  
+      <ion-input [(ngModel)]="userLogin.password" name="first"></ion-input>
+    </ion-item>
+    <!-- <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="email" placeholder="E-mail"[(ngModel)]="userLogin.email"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-top" lines="none">
+      <ion-input type="password" placeholder="Senha"[(ngModel)]="userLogin.password"></ion-input>
+    </ion-item> -->
+    <p></p>
+    <ion-row>
+      <ion-col>
+        <ion-button class="ion-margin-top" (click)="login()" color="success" expand="block">
+          Entrar
+        </ion-button>
+        <p></p>
+        <a [routerLink]="['/senha']" class="small-text">Esqueceu sua senha?</a>
+        <br>
+        <p></p>
+        <p color="success"><ion-icon name="mail"></ion-icon>Entrar com o gmail</p>
+        <br>
+        <ion-button [routerLink]="['/registration']" fill="outline" expand="block" color="success" (click)="encaminharRegister()">
+            <ion-icon slot="start" name="add"></ion-icon>
+            Sua primeira vez aqui? Cadastre-se
+        </ion-button>
+        <p></p>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

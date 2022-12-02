@@ -1,0 +1,51 @@
+/* iOS places the subtitle above the title */
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  h1{
+    text-align: left;
+    color: rgb(247, 145, 62);
+  }
+  ion-card {
+    --background: rgb(252, 250, 250);
+    --color: #0f0f0f;
+  }
+  
+  ion-card-title {
+    --color: #161616;
+  }
+  
+  ion-card-subtitle {
+    --color: #111111;
+  }
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  ion-content{
+
+    --background: linear-gradient(0deg, rgba(8, 8, 8, 0.7), rgba(12, 12, 12, 0.1)),
+    url("https://i.pinimg.com/originals/81/99/c4/8199c41f6642e5f9358085b9244b7965.jpg") no-repeat center center / cover;
+    }
+    
+    ion-menu{
+        text-align: left;
+    
+}
+ 
+ img{
+    text-align-last: end;
+ }
+
+ h2{
+  text-align: left;
+  color: rgb(255, 254, 253);
+  
+}
+ion-card-content{
+  color: rgb(0, 255, 0);
+}
+

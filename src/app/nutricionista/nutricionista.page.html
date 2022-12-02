@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Nutricionista</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/receitas']" routerdirction= "forward"></ion-icon>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+  <ion-avatar slot="start">
+    <img src="https://th.bing.com/th/id/R.49376b553f3b5f5b67409592744e5579?rik=WzvpBRDluxLgBg&pid=ImgRaw&r=0">
+  </ion-avatar>
+  <ion-label>
+    <!--<h3>Fapan222</h3>-->
+    <p>@lucasleao</p>
+    <p>19/11/2022</p>
+    <ion-spinner name="dots"></ion-spinner>
+  </ion-label>
+</ion-item>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle></ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Uma alimentação saudável é a base de todo bem estar</ion-card-content>
+  <ion-button [routerLink] = "['/avaliarnutricionista']" fill="clear">Deixe aqui sua avaliação</ion-button>
+</ion-card>
+<h1>Nutricionista:</h1>
+
+<ion-item>
+  <ion-avatar [routerLink] = "['/nutricionista1']" slot="start">
+    <img alt="Silhouette of a person's head" src="https://th.bing.com/th/id/R.770d200ef2e3fd7976dbc4156f997e29?rik=6bhxF2kYF76VmQ&riu=http%3a%2f%2fwww.saudeinformacao.com.br%2fimagens%2finformacoes%2fpreco-consulta-nutricionista-02.jpg&ehk=HiKlny2bs2R1%2fa0vYcjsO4QQBlxQ3FVdBZ3LNsp4OaM%3d&risl=&pid=ImgRaw&r=0" />
+  </ion-avatar>
+  <ion-label>Dr. Daniela Paula <ion-icon name="star-half-outline"slot="end"></ion-icon></ion-label>
+</ion-item>
+<ion-item>
+  <ion-avatar [routerLink] = "['/nutricionista2']" slot="start">
+    <img alt="Silhouette of a person's head" src="https://institucional-cms.medprev.app/storage/medprev-institucional-cms-prddia_do_nutricionista_saiba_a_importancia_desse_profissional_para_a_sua_alimentacao_3343043df3.jpeg" />
+  </ion-avatar>
+  <ion-label>Dr. Carla  Maia <ion-icon name="star-half-outline"slot="end"></ion-icon></ion-label>
+</ion-item>
+<br>
+<ion-item>
+  <ion-avatar [routerLink] = "['/nutricionista3']" slot="start">
+    <img alt="Silhouette of a person's head" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVq0uIQN5_9TkPpacvGyRYIBbVTY0-jIKn_A&usqp=CAU" />
+  </ion-avatar>
+  <ion-label>Dr. Paulo Antonio <ion-icon name="star-half-outline"slot="end"></ion-icon></ion-label>
+</ion-item>
+<br>
+
+<ion-button [routerLink] = "['/agendamento']"color="success">Agendar Consulta</ion-button><ion-button [routerLink] = "['/imc']"color="primary">Calcular IMC</ion-button>
+</ion-content>

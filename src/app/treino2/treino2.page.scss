@@ -1,0 +1,9 @@
+ion-card-content{
+    background-color: rgb(16, 17, 16);
+    color: darkorange;
+    font-size: medium;
+}
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }

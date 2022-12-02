@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Redefinição senha</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/configuracoes']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<p>Sua senha precisa ter pelo menos seis caracteresm e incluir uma combinação de numeros, letras e caracteres especiais(!$@%%)</p>
+<ion-item lines="full">
+  <ion-label position="floating"><ion-icon name="person"></ion-icon>Usuario</ion-label>
+
+  <ion-input [(ngModel)]="userRegister.email" name="first"></ion-input>
+</ion-item>
+<ion-item lines="full">
+  <ion-label position="floating"><ion-icon name="key"></ion-icon>Senha</ion-label>
+
+  <ion-input [(ngModel)]="userRegister.password" name="first"></ion-input>
+</ion-item>
+
+
+</ion-content>

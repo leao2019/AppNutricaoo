@@ -1,0 +1,214 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Receita de proteina</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/receitas']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+
+  <!--Trabalhar está funcionalidade, requisito intermediário-->
+  <ion-searchbar placeholder="Buscar"
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)"
+
+ ></ion-searchbar>
+
+</ion-header>
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento1']">
+    <ion-thumbnail slot="start">
+      <img src="https://cdn.vidaativa.pt/uploads/2020/01/arroz-de-frango-com-pimento.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Arroz de frango</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>100%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento2']">
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/OIP.Nn24w1OWfKxuqvCp4Dt8yQHaFR?pid=ImgDet&rs=1">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Pizza de frango</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>75%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento3']">
+    <ion-thumbnail slot="start">
+      <img src="https://theheritagecook.com/wp-content/uploads/2015/12/Xmas-Cherry-Duck-12-15-9.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Fatias de carne</h1>
+       <p></p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>95%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento4']">
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/OIP.OW99d-ZB6uQ4eoag6IyJBAHaFX?pid=ImgDet&rs=1">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Ovos recheados</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>95%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento5']">
+    <ion-thumbnail slot="start">
+      <img src="https://1.bp.blogspot.com/-FU8AzSZ0t3U/VriOm6MjlpI/AAAAAAABFGI/uUhJFwra-8U/s320/image-704495.png">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Arroz integral</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>100%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento6']">
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/OIP.ird41il-1KrsKz9a4ZPlsQHaHa?pid=ImgDet&w=667&h=667&rs=1">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Pão integral</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>70%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento7']">
+    <ion-thumbnail slot="start">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKAnjR8th4LepcnG-h_57GADr650csfda4V1E0mMGql2x0A1IenTqgyjs4vDXdXP20JiI&usqp=CAU">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Iogurte</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>70%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/alimento8']">
+    <ion-thumbnail slot="start">
+      <img src="https://s2.glbimg.com/osE1anfW8qxs4CcoJ6u01FFahlc=/0x0:359x343/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2012/06/13/15/25/19/270/bc.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Bolinhos de carne</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>70%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-content>
+
+</ion-content>

@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Hit</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/fitness']" routerdirction= "forward"></ion-icon>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <!--<ion-card-title></ion-card-title>-->
+      <!--<ion-card-subtitle>Card Subtitle</ion-card-subtitle>-->
+    </ion-card-header>
+  
+    <ion-card-content>
+      <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/33ab6064-a3bc-48b1-9187-e5d89de0f651/trs-formas-de-criares-os-teus-treinos-hiit.png" alt="">
+       <h1>Hit</h1>
+      faça o mastro do seu tempo com exercícios de sucesso de fitness. 
+      Uma mistura de períodos de tiro e recuperação que aumentam a aptidão cardio e a força total do corpo, 
+      tudo em 30 minutos
+   </ion-card-content>
+  </ion-card>
+  <!-- List of Text Items -->
+  <ion-list>
+    <ion-item-sliding>
+    <ion-item lines="none" button="true"[routerLink]="['/hit2']" >
+      <ion-thumbnail slot="start">
+        <img src="https://cdn1.iconfinder.com/data/icons/people-in-the-park-having-fun-1/66/66-512.png">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+         <h1>Training hit</h1>
+         <p>06/09/2022</p>
+         <p>Cardio HIIT para queimar gordura! 
+          </p>
+        </div>
+        </ion-label>
+        <ion-chip color="success" outline>
+          <ion-label>80%</ion-label>
+        </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="exibirAlertaFavorito()">
+        <io-icon slot="icon-only" name="caret-forward-circle"></io-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  </ion-list>
+    
+  <ion-list>
+    <ion-item-sliding>
+    <ion-item lines="none" button="true"[routerLink]="['/hit3']" >
+      <ion-thumbnail slot="start">
+        <img src="https://static.fabfitfun.com/magazine/wp-content/uploads/2020/10/09132859/yoga5.png">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+         <h1>Cardio em 15 minutos</h1>
+         <p>06/09/2022</p>
+         <p> Para Queimar muita caloria
+          </p>
+        </div>
+        </ion-label>
+        <ion-chip color="success" outline>
+          <ion-label>80%</ion-label>
+        </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="exibirAlertaFavorito()">
+        <io-icon slot="icon-only" name="caret-forward-circle"></io-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-sliding>
+    <ion-item lines="none" button="true"[routerLink]="['/hit4']" >
+      <ion-thumbnail slot="start">
+        <img src="https://thumbs.dreamstime.com/b/kobiety-s-joga-wektoru-ilustracja-101628924.jpg">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+         <h1>Cardio em 15 minutos</h1>
+         <p>06/09/2022</p>
+         <p>Emagreça em casa dançando</p>
+        </div>
+        </ion-label>
+        <ion-chip color="success" outline>
+          <ion-label>80%</ion-label>
+        </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="exibirAlertaFavorito()">
+        <io-icon slot="icon-only" name="caret-forward-circle"></io-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  </ion-list>
+ 
+  <ion-list>
+    <ion-item-sliding>
+    <ion-item lines="none" button="true"[routerLink]="['/hit5']" >
+      <ion-thumbnail slot="start">
+        <img src="https://th.bing.com/th/id/OIP.Rfmwz236wEBtrrnhejAXwQHaHa?pid=ImgDet&rs=1">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+         <h1>Treino de ABDOMINAL</h1>
+         <p>06/09/2022</p>
+         <p>Treinos de abdominais
+          </p>
+        </div>
+        </ion-label>
+        <ion-chip color="success" outline>
+          <ion-label>80%</ion-label>
+        </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="exibirAlertaFavorito()">
+        <io-icon slot="icon-only" name="caret-forward-circle"></io-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

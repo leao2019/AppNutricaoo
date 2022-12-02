@@ -1,0 +1,24 @@
+ion-card {
+    --background: rgb(44, 43, 43);
+    --color: #f07a2c;
+  }
+  
+  ion-card-title {
+    --color: #fc430a;
+  }
+  
+  ion-card-subtitle {
+    --color: #d1fff8;
+  }
+  
+  /* iOS places the subtitle above the title */
+  ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  ion-content{
+
+    --background: linear-gradient(0deg, rgba(8, 8, 8, 0.7), rgba(12, 12, 12, 0.1)),
+    url("https://i.pinimg.com/originals/81/99/c4/8199c41f6642e5f9358085b9244b7965.jpg") no-repeat center center / cover;
+    }
+    

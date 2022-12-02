@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>Cadastro de Usuário</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/login']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <form>
+ 
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="person"></ion-icon>Usuario</ion-label>
+
+      <ion-input [(ngModel)]="userRegister.email" name="first"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="key"></ion-icon>Senha</ion-label>
+  
+      <ion-input [(ngModel)]="userRegister.password" name="first"></ion-input>
+    </ion-item>
+
+    <ion-button class="ion-margin-top" (click)="register()" color="success" expand="block">
+     cadastrar
+   </ion-button>
+    <ion-row>
+      <ion-col>
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        
+        <ion-button class="ion-margin-top" (click)="register()" color="success" expand="block">
+          Enviar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

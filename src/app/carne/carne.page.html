@@ -1,0 +1,224 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Treinos</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/fitness']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+  <!--<ion-searchbar placeholder="Buscar"></ion-searchbar>-->
+
+</ion-header>
+<br>
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treinos']" >
+    
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/R.7ad903ab4422075151e37c72f8d76311?rik=7nrMXvAJqjjKGg&riu=http%3a%2f%2ffisiokinesiterapia-news.it%2fwp-content%2fuploads%2f2018%2f01%2f34cffdd95c32d6bbd89ce602fde644f91.jpg&ehk=hJcAAKAO512AnGtEIel6R9TvPFuFSFf9iUvdLlYZBuI%3d&risl=&pid=ImgRaw&r=0">
+      <!--Código Gif
+      *../../assets/icon/leg1.gif* -->
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Leg press 45</h1>
+       <p>27/08/2022</p>
+       <p></p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treino3']" >
+    <ion-thumbnail slot="start">
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/e9/6d/d6/e96dd6f70f4d52271012022dbe39dbe6.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Mesa flexora</h1>
+       <p>06/09/2022</p>
+       <p>Fortalecimento dos musculos posteriores
+        </p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treino3']" >
+    <ion-thumbnail slot="start">
+      <img src="https://d318e6q4e3so0o.cloudfront.net/wp-content/uploads/2018/04/17082353/Stopping_Seated_Leg_Curl_0200.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Cadeira flexora</h1>
+       <p>06/09/2022</p>
+       <p>Exercicios para Fortalecimento na região dos quadríceps
+        </p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treino4']" >
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/OIP.MvR-prIiynFnXDOy94ROZgHaEc?pid=ImgDet&rs=1">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Treino de ombros</h1>
+       <p>27/08/2022</p>
+       <p>Elevação lateral</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treino5']" >
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/OIP.ycJrJLM-UmIpgDcFsJJYFQAAAA?pid=ImgDet&w=366&h=280&rs=1">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Treino de panturrilha</h1>
+       <p>27/08/2022</p>
+       <p>Panturrilha concentrada</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treino6']" >
+    <ion-thumbnail slot="start">
+      <img src="https://i.pinimg.com/736x/7e/48/7d/7e487d0ba2195db5fe7efd7e687aa510.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Treino de bicips</h1>
+       <p>27/08/2022</p>
+       <p>Rosca martelo</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treino7']">
+    <ion-thumbnail slot="start">
+      <img src="https://www.gymvisual.com/1279-large_default/3-4-sit-up.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Treino de triceps</h1>
+       <p>27/08/2022</p>
+       <p>Triceps curvada</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="none" button="true"[routerLink]="['/treino8']">
+    <ion-thumbnail slot="start">
+      <img src="https://www.gymvisual.com/1279-large_default/3-4-sit-up.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Treino abdominal</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-content>
+
+</ion-content>

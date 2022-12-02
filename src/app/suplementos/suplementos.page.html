@@ -1,0 +1,165 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Suplementos</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/receitas']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Buscar"
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)"
+
+ ></ion-searchbar>
+</ion-header>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="full" [routerLink] = "['/suplemento1']">
+    <ion-thumbnail slot="start">
+      <img src="https://a-static.mlcdn.com.br/1500x1500/suplemento-em-po-darkness-integralmedica-proteina-da-carne-carnibol-18kg-chocolate-integralmedica/taurene/ta10763/18128fac4b5cdf4723c4ac2dfc33e281.jpeg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Suplemento em Po Darkness</h1>
+       <p>04/10/2022</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>100%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="full" [routerLink] = "['/suplemento2']">
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/R.40b15ce1ed75a88ead488fe4c7a39677?rik=ZGQY3kGlIwE81g&pid=ImgRaw&r=0">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Creatina Integralmedica</h1>
+       <p></p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>95%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="full" [routerLink] = "['/suplementos3']">
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/R.82b3651781bbfc9fbafb28ddae67025d?rik=S0iC16JNTrLfEA&pid=ImgRaw&r=0">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Omega 3</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>95%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="full"  [routerLink] = "['/suplementos4']">
+    <ion-thumbnail slot="start">
+      <img src="https://a-static.mlcdn.com.br/800x560/whey-black-skull-900g-baunilha/rainhafitpi/1p/012345391b4b0a0fb4f08bdba8c72879.jpeg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Whey black skull</h1>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>100%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="full" [routerLink] = "['/suplementos5']">
+    <ion-thumbnail slot="start">
+      <img src="https://a-static.mlcdn.com.br/800x560/whey-pro-1kg-max-titanium/drogariafarmabom/61fb02b375646ab99ae6cc49/06e2e680417d26cc2b9d7a34fce6da8f.jpg">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>Whey Pro 1kg</h1>
+       <p></p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>95%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-list>
+  <ion-item-sliding>
+  <ion-item lines="full">
+    <ion-thumbnail slot="start">
+      <img src="https://th.bing.com/th/id/R.d6303b4857f936ff45937294ed409d5a?rik=vpyqQG3BXDzicw&pid=ImgRaw&r=0">
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+       <h1>BCCA BLACK SKULL</h1>
+       <p>03/10/2022</p>
+      </div>
+      </ion-label>
+    
+      <ion-chip color="success" outline>
+        <ion-label>95%</ion-label>
+      </ion-chip>
+  </ion-item>
+  <ion-item-options side="end">
+    <ion-item-option (click)="exibirAlertaFavorito()">
+      <io-icon slot="icon-only" name="heart"></io-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding>
+</ion-list>
+
+<ion-content>
+
+</ion-content>

@@ -1,0 +1,14 @@
+/* iOS places the subtitle above the title */
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  ion-card {
+    --background: rgb(13, 14, 13);
+    --color: #f4f5f1;
+  }
+  ion-avatar {
+    --border-radius: 1px;
+  }
+  
